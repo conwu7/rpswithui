@@ -1,0 +1,172 @@
+html {
+    margin: 0;
+
+}
+
+body {
+    background-image: url("images/paper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Montserrat, sans-serif;
+}
+.logo {
+    width: 100%;
+    justify-content: center;
+}
+
+.imglogo {
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    opacity: 0.5;
+}
+
+p {
+    text-align: center;
+}
+
+p.pNoContainer {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 5px;
+}
+
+#username {
+    display: inline-block;
+    margin: 20px auto;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    border: solid darkslategray;
+    padding: 5px 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#username:focus {
+    outline: none;
+}
+
+.leftContainer {
+    display: inline-block;
+    width: 60%;
+    justify-items: start;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+.rightContainer {
+    display: inline-block;
+    width: 38%;
+    justify-self: start;
+    vertical-align: top;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.choices {
+    text-align: center;
+}
+
+.optionsContainer {
+    margin: auto;
+    text-align: center;
+}
+
+.options,.currentRound {
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: bold;
+    margin: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: lightpink;
+    opacity: 0.9;
+}
+
+.currentRound {
+    line-height: 5px;
+    opacity: 0.9;
+}
+
+.options:focus, .options:hover {
+    outline: none;
+    background-color: lightseagreen;
+}
+
+.youchose, .computerchose {
+    display: inline-block;
+    margin: 20px 50px;
+    padding: 5px 20px;
+    background-color: #3BC1AC;
+    border-radius: 5px;
+    opacity: 0.9
+
+}
+
+.scores {
+    width: 100%;
+    text-align: center;
+}
+
+.userScore, .computerScore {
+    display: inline-block;
+    margin: 10px 10px;
+    background-color: indianred;
+    padding: 5px 20px;
+    border-radius: 5px;
+    opacity: 0.9;
+    width: 80px;
+}
+
+.gameOver {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.result {
+    display: block;
+    width: 40%;
+    margin: auto;
+    font-size: 20px;
+    background-color: yellow;
+    border-radius: 5px;
+    padding: 15px;
+    opacity: 0.9;
+}
+
+.head {
+
+}
+
+.afterName, .notcomplete {
+    display: none;
+}
+
+#save {
+    display: inline-block;
+    height: 40px;
+    margin: 20px auto;
+    padding: 8px;
+    border-radius: 5px;
+    border: solid darkslategray;
+}
+
+form {
+    text-align: center;
+    vertical-align: center;
+
+}
+
+#save:focus {
+
+}
+
+.userScore:hover, .computerScore:hover {
+    transform: scale(1.5);
+    background-color: #018DED;
+    opacity: 1.0;
+}
+

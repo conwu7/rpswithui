@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock, Paper, Scissors</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="head">
+        <div class="logo">
+                <img class="imglogo" src="images/rpslogo.jpeg" alt="Game Logo">
+        </div>
+        <div class="beforeName">
+            <p class="pNoContainer">First to 5 wins</p>
+            <p class="pNoContainer">To Begin, Enter Your Name</p>
+            <form>
+                <input id="username" name="name" type="text">
+                <button type=button id="save">Save</button>
+            </form>
+        </div>
+    </div>
+    <div  class="leftContainer afterName">
+        <div class="rules">
+        </div>
+        <div class="choices">
+            <div class="optionsContainer">
+                <button type="button" id="rock" class="options rock">Rock</button>
+                <button type="button" id="paper" class="options paper">Paper</button>
+                <button type="button" id="scissors" class="options scissors">Scissors</button>
+            </div>
+            <div class="youchose">
+                <p>You Chose:</p>
+                <p class="youreallychose"></p>
+            </div>
+            <div class="computerchose">
+                <p>Computer Chose:</p>
+                <p class="computerreallychose"></p>
+            </div>
+            <p class="pickAgain pNoContainer">Pick Again!</p>
+        </div>
+    </div>
+    <div class="rightContainer afterName">
+        <div class="currentRound">
+            <p><strong>Round:</strong></p>
+            <p class="currentuserround">0</p>
+        </div>
+        <div class="scores">
+            <div class="userScore">
+                <p class="onlyNameLocation">Name</p>
+                <p class="currentuserscore">0</p>
+            </div>
+            <div class="computerScore">
+                <p>Computer</p>
+                <p class="currentcomputerscore">0</p>
+            </div>
+        </div>
+    </div>
+    <div  class="gameOver afterName">
+        <p class="result notcomplete">Result</p>
+        <button class="playAgain notcomplete">Play Again?</button>
+    </div>
+    <script src="soro.js"></script>
+</body>
+</html>
