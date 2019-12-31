@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background-image: url("https://www.959chfm.com/wp-content/uploads/sites/12/2018/02/sansome.jpg");
+    background-image: url("images/paper.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Montserrat, sans-serif;
@@ -12,6 +12,7 @@ body {
 .logo {
     width: 100%;
     justify-content: center;
+
 }
 
 .imglogo {
@@ -19,6 +20,7 @@ body {
     margin: auto;
     border-radius: 20px;
     opacity: 0.5;
+
 }
 
 p {
@@ -62,6 +64,7 @@ p.pNoContainer {
     vertical-align: top;
     text-align: center;
     margin-top: 20px;
+    margin-right: 5px;
 }
 
 .choices {
@@ -75,20 +78,25 @@ p.pNoContainer {
 
 .options,.currentRound {
     display: inline-block;
-    padding: 5px 20px;
+    padding: 5px 15px;
     font-size: 30px;
     font-family: Montserrat;
     font-weight: bold;
-    margin: 10px 10px;
+    margin: 10px 5px 10px;
     border: none;
     border-radius: 5px;
     background-color: lightpink;
     opacity: 0.9;
+    width: 25%;
+    height: 120px;
+    min-width: 150px;
+    text-align: center;
 }
 
 .currentRound {
     line-height: 5px;
     opacity: 0.9;
+    width: 90%;
 }
 
 .options:focus, .options:hover {
@@ -98,12 +106,12 @@ p.pNoContainer {
 
 .youchose, .computerchose {
     display: inline-block;
-    margin: 20px 50px;
+    margin: 20px 10px;
     padding: 5px 20px;
     background-color: #3BC1AC;
     border-radius: 5px;
-    opacity: 0.9
-
+    opacity: 0.9;
+    width: 31.5%;
 }
 
 .scores {
@@ -113,7 +121,7 @@ p.pNoContainer {
 
 .userScore, .computerScore {
     display: inline-block;
-    margin: 10px 10px;
+    margin: 15px 10px;
     background-color: indianred;
     padding: 5px 20px;
     border-radius: 5px;
@@ -123,7 +131,7 @@ p.pNoContainer {
 
 .gameOver {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
 .result {
@@ -168,5 +176,15 @@ form {
     transform: scale(1.5);
     background-color: #018DED;
     opacity: 1.0;
+    margin: 0px 20px 0;
+    transition: all 0.5s;
 }
 
+#playAgain {
+    height: 40px;
+    font-size: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: bisque;
+}

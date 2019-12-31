@@ -51,6 +51,7 @@ let currentcomputerscoreDiv = document.querySelector('.currentcomputerscore');
 let currentplayerscore = 0;
 let currentuserround = 0;
 let currentcomputerscore = 0;
+let pickAgainDiv = document.querySelector('.pickAgain');
 
 let resultsDiv = document.querySelector('.result');
 
@@ -66,21 +67,38 @@ function updateScoresAndRounds(e) {
     playerscoreDiv.textContent = currentplayerscore;
     currentuserroundDiv.textContent = currentuserround;
     currentcomputerscoreDiv.textContent = currentcomputerscore;
+    pickAgainDiv.classList.remove('notcomplete');
 
     if (currentcomputerscore === 5 || currentplayerscore === 5) {
         const result = gameCheck(currentplayerscore, currentcomputerscore);
-        resultsDiv.classList.remove('notcomplete');
-        document.querySelector('div.gameOver button').classList.remove('notcomplete');
+        document.querySelector('div.gameOver').classList.remove('notcomplete');
         resultsDiv.textContent = result;
         document.querySelector('.leftContainer').classList.add('notcomplete');
         document.querySelector('.rightContainer').style.width = '100%';
     }
 }
 
+function resetGame(e) {
+    currentuserround = 0;
+    currentcomputerscore = 0;
+    currentplayerscore = 0;
+    document.querySelector('.leftContainer').classList.remove('notcomplete');
+    document.querySelector('.rightContainer').style.width = '38%';
+    document.querySelector('div.gameOver').classList.add('notcomplete');
+    playerscoreDiv.textContent = currentplayerscore;
+    currentuserroundDiv.textContent = currentuserround;
+    currentcomputerscoreDiv.textContent = currentcomputerscore;
+    document.querySelector('.computerreallychose').textContent = '';
+    document.querySelector('.youreallychose').textContent = '';
+    pickAgainDiv.classList.add('notcomplete');
+}
+
 document.querySelector("#save").addEventListener('click', saveName);
 document.querySelector('.rock').addEventListener('click', updateScoresAndRounds);
 document.querySelector('.paper').addEventListener('click',updateScoresAndRounds);
 document.querySelector('.scissors').addEventListener('click',updateScoresAndRounds);
+document.querySelector('#playAgain').addEventListener('click', resetGame);
+
 
 
 
